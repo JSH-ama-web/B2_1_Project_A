@@ -1,0 +1,85 @@
+# GOATicket UI Design Prompt — Gemini Image Generation
+
+## TASK
+
+Generate a high-fidelity Korean baseball ticket booking app screen.
+Fictional KBO-style league games only — no concerts, musicals, or other sports.
+Output: 9:16 portrait screen UI only. No phone frame, no device bezel.
+
+## OUTPUT FORMAT
+
+- Ratio: 9:16 portrait · reference size 390×844px
+- Style: flat iOS-inspired UI, digital illustration, pixel-perfect
+- Language: all UI text in Korean (한국어) · render Hangul accurately
+
+## COLORS
+
+Light surface — bg `#FFFFFF` or `#F5F5F7` · text `#1D1D1F` · secondary `#6B6B6B` · accent `#0066CC`
+Dark surface — bg `#1D1D1F` or `#272729` · text `#FFFFFF` · secondary `#CCCCCC` · accent `#2997FF`
+Cards: white bg + 1px `#E0E0E0` border · no drop-shadows on any UI element
+Rules: one accent only · no gradients · light↔dark sections alternate per screen
+
+## TYPOGRAPHY
+
+34pt ExtraBold — hero title / 17pt Semibold — nav & card title / 17pt Regular — body
+15pt Regular `#6B6B6B` — caption / 10pt Medium — tab label / No italic
+
+## LAYOUT & SAFE ZONES
+
+Edge margin 16pt both sides (always) · cards 16px radius · CTA buttons pill-shaped 50px tall
+Top 59px: status bar (time + signal icons only, no app content)
+Nav bar 44px: logo left, action icons right
+Tab bar 49px: 홈 / 경기일정 / 내 티켓 / 마이페이지
+Bottom 34px: home indicator only
+
+## COMPONENTS
+
+**CTA**: full-width pill, 50px, 32px side margins, `#0066CC` fill, white Korean text
+**Search**: pill, 44px, `#F0F0F2` fill — placeholder: 팀명 또는 구장을 검색하세요
+**Filter chips** (horizontal scroll, pill, 32px) — categories ONLY:
+팀별: 전체 / 서울 불사조 / 부산 파도 / 대구 청매 / 인천 번개 /
+대전 백호 / 광주 비룡 / 수원 폭풍 / 창원 돌고래 / 전주 황소 / 고양 늑대
+구장별: 챔피언스파크 / 해양야구장 / 블루돔 / 스카이필드 /
+선샤인파크 / 비룡파크 / 폭풍구장 / 마린파크 / 황소파크
+**Game card**: white bg, 16px radius, 1px border — 홈팀 vs 원정팀 · 구장 · 날짜 · 가격
+**Ticket card**: dark navy `#1A1A2E`, 20px radius, QR코드, team info — only this gets a subtle shadow
+**Status badge**: 매진 (red pill) / 잔여 좌석 (blue pill) / 예매 가능 (green pill)
+
+## KOREAN TEXT REFERENCE
+
+Actions: 예매하기 / 좌석 선택 / 결제하기 / 확인 / 취소 / 더보기
+Game info: 서울 불사조 vs 부산 파도 · 2025년 8월 15일 (금) 오후 6:30 · 챔피언스파크
+Seats: 1루석 / 3루석 / 외야석 / 내야석 / 프리미엄석
+Price: 12,000원\~ / 15,000원
+
+## FICTIONAL TEAMS & STADIUMS REFERENCE
+
+| 구단명    | 홈 구장     |
+| ------ | -------- |
+| 서울 불사조 | 챔피언스파크   |
+| 부산 파도  | 해양야구장    |
+| 대구 청매  | 블루돔      |
+| 인천 번개  | 스카이필드    |
+| 대전 백호  | 선샤인파크    |
+| 광주 비룡  | 비룡파크     |
+| 수원 폭풍  | 폭풍구장     |
+| 창원 돌고래 | 마린파크     |
+| 전주 황소  | 황소파크     |
+| 고양 늑대  | 고양베이스볼파크 |
+
+## SCREENS
+
+홈 / 경기일정 / 경기상세 / 좌석선택 / 결제 / 내티켓 / 티켓상세 / 마이페이지 / 로그인
+
+## CONSISTENCY RULES
+
+1. Every screen: same status bar + same 4-tab bottom bar
+2. Active tab always highlighted in `#0066CC`
+3. No phone frame in output
+4. Baseball content only — fictional teams and stadiums only, no real brand names
+
+## USAGE
+
+Append to this prompt:
+
+> "Generate the GOATicket [마이페이지] screen. Show [elements]."
