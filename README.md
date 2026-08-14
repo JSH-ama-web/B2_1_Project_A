@@ -25,7 +25,7 @@ AI 기반 UI/UX 디자인 시안 제작
 
 해당 프로젝트의 핵심 사용자 목표는 “여러 경기 일정을 한눈에 파악하고 빠르게 예약하는 것"으로 정의하였다. 따라서 경기일정 파악과 예매에 관여하는 중요 카테고리들을 중심으로 워크 플로우를 구성하였다.
 
-![Payment Processing Workflow-2026-08-14-024728.png](%EC%9E%91%EC%97%85%20%EB%A1%9C%EA%B7%B8%20%EB%AC%B8%EC%84%9C/Payment_Processing_Workflow-2026-08-14-024728.png)
+![Workflow](./Payment%20Processing%20Workflow-2026-08-14-024728.png)
 
 #### 2-2. **AI 생성 일관성 유지 프롬프트 전략**
 
