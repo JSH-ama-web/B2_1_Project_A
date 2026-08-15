@@ -927,7 +927,7 @@ To generate a specific screen, append after this system prompt:
 
 | 수정2 | 수정 전 | 수정 후  |
 | --- | --- | --- |
-| 출력 이미지 | <img src="./source/메인페이지.png" width="300" alt="before"> | <img src="./result/메인페이지(수정완).png" width="300" alt="before"> |
+| 출력 이미지 | <img src="./source/메인페이지.png" width="300" alt="before"> | <img src="./result/메인페이지(수정완).png" width="300" alt="after"> |
 | 프롬프트 | (전 프롬프트의 결과물을 첨부하여 실행) | 아래 수정 후 참고 |
 
 ```markdown
