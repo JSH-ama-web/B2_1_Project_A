@@ -352,8 +352,12 @@ AI모델이 이미지를 생성할때 같은 디자인과 형식을 유지하기
 
 | 수정1 | 수정 전 | 수정 후  |
 | --- | --- | --- |
-| 출력 이미지 |  |  |
-| 프롬프트 | # GOATicket UI Design System Prompt — Gemini Image Generation
+| 출력 이미지 | ![수정 전](./source/메인페이지.png) |  |
+| 프롬프트 | [아래 수정 전 참고] | [아래 수정 후 참고] |
+
+```markdown
+[수정 전]
+# GOATicket UI Design System Prompt — Gemini Image Generation
 
 ## HOW TO USE
 Paste this entire system prompt, then append your screen-specific instruction at the bottom:
@@ -398,23 +402,23 @@ The visual style is inspired by Apple's design philosophy:
 Always use these exact colors. Never deviate.
 
 ### Light Mode (default for most screens)
-- Page background: pure white `#FFFFFF` or off-white `#F5F5F7`
-- Card background: white `#FFFFFF` with a very thin light gray border `#E0E0E0`
-- Primary text: near-black `#1D1D1F`
-- Secondary text: medium gray `#6B6B6B`
-- Muted / caption text: light gray `#7A7A7A`
-- Dividers: very light gray `#E0E0E0` (hairline, 1px)
-- **Primary accent: Action Blue `#0066CC`** — used for ALL interactive elements (buttons, links, active tabs, selected states)
+- Page background: pure white #FFFFFF or off-white #F5F5F7
+- Card background: white #FFFFFF with a very thin light gray border #E0E0E0
+- Primary text: near-black #1D1D1F
+- Secondary text: medium gray #6B6B6B
+- Muted / caption text: light gray #7A7A7A
+- Dividers: very light gray #E0E0E0 (hairline, 1px)
+- **Primary accent: Action Blue #0066CC** — used for ALL interactive elements (buttons, links, active tabs, selected states)
 
 ### Dark Mode (for featured / hero sections within a screen)
-- Section background: near-black `#1D1D1F` or dark charcoal `#272729`
-- Card background: dark gray `#2A2A2C` with border `#3A3A3C`
-- Primary text: white `#FFFFFF`
-- Secondary text: muted white `#CCCCCC`
-- **Primary accent on dark: Sky Blue `#2997FF`** — Action Blue is invisible on dark backgrounds; always switch to Sky Blue on dark surfaces
+- Section background: near-black #1D1D1F or dark charcoal #272729
+- Card background: dark gray #2A2A2C with border #3A3A3C
+- Primary text: white #FFFFFF
+- Secondary text: muted white #CCCCCC
+- **Primary accent on dark: Sky Blue #2997FF** — Action Blue is invisible on dark backgrounds; always switch to Sky Blue on dark surfaces
 
 ### Accent Rules (non-negotiable)
-- Exactly ONE accent color per surface: `#0066CC` on light, `#2997FF` on dark
+- Exactly ONE accent color per surface: #0066CC on light, #2997FF on dark
 - No second accent color — no red, orange, green, or purple accents
 - No gradient fills anywhere in the UI
 - Brand color from GOATicket logo takes priority over Action Blue when provided
@@ -428,15 +432,15 @@ Always use these exact colors. Never deviate.
 
 | Role | Size | Weight | Color |
 |---|---|---|---|
-| Hero / page title | 34pt | Extra Bold | `#1D1D1F` or white on dark |
-| Navigation bar title | 17pt | Semibold | `#1D1D1F` or white on dark |
-| Section heading | 22pt | Bold | `#1D1D1F` |
-| Card title | 17pt | Semibold | `#1D1D1F` |
-| Body text | 17pt | Regular | `#1D1D1F` |
-| Secondary / caption | 15pt | Regular | `#6B6B6B` |
-| Label / tag | 13pt | Semibold | white on colored bg, or `#1D1D1F` |
-| Fine print | 12pt | Regular | `#7A7A7A` |
-| Tab bar label | 10pt | Medium | `#0066CC` active / `#7A7A7A` inactive |
+| Hero / page title | 34pt | Extra Bold | #1D1D1F or white on dark |
+| Navigation bar title | 17pt | Semibold | #1D1D1F or white on dark |
+| Section heading | 22pt | Bold | #1D1D1F |
+| Card title | 17pt | Semibold | #1D1D1F |
+| Body text | 17pt | Regular | #1D1D1F |
+| Secondary / caption | 15pt | Regular | #6B6B6B |
+| Label / tag | 13pt | Semibold | white on colored bg, or #1D1D1F |
+| Fine print | 12pt | Regular | #7A7A7A |
+| Tab bar label | 10pt | Medium | #0066CC active / #7A7A7A inactive |
 
 Typography rules:
 - Headlines at 22pt+ must have tight letter-spacing (slightly condensed)
@@ -484,32 +488,32 @@ Typography rules:
 - 49px tall, white background on light screens / dark on dark screens
 - Top border: 1px light gray
 - Contains 4–5 tabs with icon + Korean label below each
-- Active tab: icon and label in `#0066CC` (Action Blue)
-- Inactive tabs: icon and label in `#7A7A7A` gray
+- Active tab: icon and label in #0066CC (Action Blue)
+- Inactive tabs: icon and label in #7A7A7A gray
 - Suggested tabs: 홈 / 검색 / 티켓 / 마이페이지
 
 ### Primary CTA Button
 - Full-width rounded pill shape (very round corners, capsule shape)
 - 32px margin on each side (so it spans from 32px to 358px)
 - Height: 50px
-- Light mode: filled `#0066CC`, white Korean text, 17pt semibold
-- Dark mode: filled `#2997FF`, white Korean text, 17pt semibold
+- Light mode: filled #0066CC, white Korean text, 17pt semibold
+- Dark mode: filled #2997FF, white Korean text, 17pt semibold
 - Example text: 예매하기 / 결제하기 / 로그인 / 다음
 
 ### Secondary CTA Button
 - Same pill shape and size as primary
-- Transparent background, `#0066CC` border and text (ghost style)
+- Transparent background, #0066CC border and text (ghost style)
 
 ### Content Card
-- White background (`#FFFFFF`)
+- White background (#FFFFFF)
 - Corner radius: 16px (softly rounded)
-- Very thin gray border: 1px `#E0E0E0`
+- Very thin gray border: 1px #E0E0E0
 - NO drop shadow — the card sits flat
 - Internal padding: 16px
 - Contains: event thumbnail image on top + text below
 
 ### Ticket Card (Featured)
-- Dark background: very dark navy `#1A1A2E` or use the event's brand color
+- Dark background: very dark navy #1A1A2E or use the event's brand color
 - Corner radius: 20px
 - Event poster image at top (16:9 ratio, fills card width, rounded top corners)
 - White text content below image
@@ -518,15 +522,15 @@ Typography rules:
 
 ### Search Input Field
 - Pill-shaped (capsule), 44px tall
-- Light gray fill `#F0F0F2` on light screens, dark gray `#2A2A2C` on dark screens
+- Light gray fill #F0F0F2 on light screens, dark gray #2A2A2C on dark screens
 - No border visible in rest state
 - Left: gray search icon (🔍) at 16px
-- Placeholder text: Korean, gray `#7A7A7A` (e.g., 공연, 뮤지컬, 스포츠 검색)
+- Placeholder text: Korean, gray #7A7A7A (e.g., 공연, 뮤지컬, 스포츠 검색)
 
 ### Filter Chips / Category Pills
 - Horizontal scrolling row of pill-shaped chips
-- Rest state: light gray fill `#F0F0F2`, dark text `#1D1D1F`, 13pt semibold
-- Active/selected: `#0066CC` fill, white text
+- Rest state: light gray fill #F0F0F2, dark text #1D1D1F, 13pt semibold
+- Active/selected: #0066CC fill, white text
 - Height: 32px, padding: 12px horizontal
 - Korean category labels: 전체 / 콘서트 / 스포츠 / 뮤지컬 / 전시 등
 
@@ -540,7 +544,7 @@ Typography rules:
 ### Section Header
 - Left-aligned, 22pt bold Korean heading text
 - 16px from left edge
-- Optional right-side "더보기" link in `#0066CC` accent color
+- Optional right-side "더보기" link in #0066CC accent color
 
 ### Notification Badge
 - Small red circle (예외적으로 빨간색 허용 — badges only) or accent blue
@@ -572,17 +576,17 @@ Use these as the basis for specific screen generation requests.
 
 | Screen | Korean Name | Key Elements |
 |---|---|---|
-| `splash` | 스플래시 | Dark bg, centered GOATicket logo, loading indicator |
-| `onboarding` | 온보딩 | Light bg, illustration, large heading, body, primary CTA at bottom |
-| `home` | 홈 | Large title, search bar, category chips, horizontal carousel, vertical card list |
-| `search` | 검색 | Search input focused, filter chips, results list |
-| `event-detail` | 공연 상세 | Full-bleed poster image, scroll content, sticky bottom CTA |
-| `seat-selection` | 좌석 선택 | Dark bg, seat map grid, legend, selection summary, CTA |
-| `payment` | 결제 | Step indicator, form fields, order summary, pay button |
-| `ticket-wallet` | 내 티켓 | Featured ticket card (dark), upcoming list below |
-| `ticket-detail` | 티켓 상세 | Ticket card with QR code, event info rows |
-| `profile` | 마이페이지 | User info header, settings list rows |
-| `login` | 로그인 | GOATicket logo, input fields, primary/secondary CTAs, social login options |
+| splash | 스플래시 | Dark bg, centered GOATicket logo, loading indicator |
+| onboarding | 온보딩 | Light bg, illustration, large heading, body, primary CTA at bottom |
+| home | 홈 | Large title, search bar, category chips, horizontal carousel, vertical card list |
+| search | 검색 | Search input focused, filter chips, results list |
+| event-detail | 공연 상세 | Full-bleed poster image, scroll content, sticky bottom CTA |
+| seat-selection | 좌석 선택 | Dark bg, seat map grid, legend, selection summary, CTA |
+| payment | 결제 | Step indicator, form fields, order summary, pay button |
+| ticket-wallet | 내 티켓 | Featured ticket card (dark), upcoming list below |
+| ticket-detail | 티켓 상세 | Ticket card with QR code, event info rows |
+| profile | 마이페이지 | User info header, settings list rows |
+| login | 로그인 | GOATicket logo, input fields, primary/secondary CTAs, social login options |
 
 ---
 
@@ -590,10 +594,10 @@ Use these as the basis for specific screen generation requests.
 
 1. **Color**: Always use the exact hex values defined above. No approximations.
 2. **Navigation**: Every screen shows the same status bar style (time + icons) at top and the same bottom tab bar (unless it's a modal or full-screen overlay).
-3. **Active tab**: The tab bar must always highlight the correct active screen tab in `#0066CC`.
+3. **Active tab**: The tab bar must always highlight the correct active screen tab in #0066CC.
 4. **Margins**: 16pt left/right edge margin on all content — no exceptions except full-bleed images.
 5. **CTA position**: The primary action button is always near the bottom of the screen, above the tab bar. Never floating randomly in the middle.
-6. **Surface alternation**: If a screen has multiple distinct sections, alternate between white `#FFFFFF` / off-white `#F5F5F7` and dark `#1D1D1F` / `#272729` sections to create visual rhythm.
+6. **Surface alternation**: If a screen has multiple distinct sections, alternate between white #FFFFFF / off-white #F5F5F7 and dark #1D1D1F / #272729 sections to create visual rhythm.
 7. **No phone frame**: The output must be the screen only — no device shell, no outer glow, no background.
 8. **No decorative gradients**: Background fills are solid colors only.
 9. **No UI shadows**: Only the featured Ticket Card may have a very subtle shadow. All other cards and elements are flat.
@@ -619,7 +623,12 @@ Use these as the basis for specific screen generation requests.
 To generate a specific screen, append after this system prompt:
 
 > Generate the GOATicket **홈 (home)** screen.
-> Show: a large "GOATicket" title at top, a Korean search bar ("공연, 뮤지컬, 스포츠 검색"), horizontal category chips (전체/콘서트/뮤지컬/스포츠/전시), a "추천 공연" section with 2 event cards showing Korean concert names and prices, and a bottom tab bar with 홈/검색/내 티켓/마이페이지 tabs with 홈 active. | # GOATicket UI Design System Prompt — Gemini Image Generation
+> Show: a large "GOATicket" title at top, a Korean search bar ("공연, 뮤지컬, 스포츠 검색"), horizontal category chips (전체/콘서트/뮤지컬/스포츠/전시), a "추천 공연" section with 2 event cards showing Korean concert names and prices, and a bottom tab bar with 홈/검색/내 티켓/마이페이지 tabs with 홈 active.
+```
+
+```markdown
+[수정 후]
+# GOATicket UI Design System Prompt — Gemini Image Generation
 
 ## HOW TO USE
 Paste this entire system prompt, then append your screen-specific instruction at the bottom:
@@ -669,23 +678,23 @@ The visual style is inspired by Apple's design philosophy:
 Always use these exact colors. Never deviate.
 
 ### Light Mode (default for most screens)
-- Page background: pure white `#FFFFFF` or off-white `#F5F5F7`
-- Card background: white `#FFFFFF` with a very thin light gray border `#E0E0E0`
-- Primary text: near-black `#1D1D1F`
-- Secondary text: medium gray `#6B6B6B`
-- Muted / caption text: light gray `#7A7A7A`
-- Dividers: very light gray `#E0E0E0` (hairline, 1px)
-- **Primary accent: Action Blue `#0066CC`** — used for ALL interactive elements (buttons, links, active tabs, selected states)
+- Page background: pure white #FFFFFF or off-white #F5F5F7
+- Card background: white #FFFFFF with a very thin light gray border #E0E0E0
+- Primary text: near-black #1D1D1F
+- Secondary text: medium gray #6B6B6B
+- Muted / caption text: light gray #7A7A7A
+- Dividers: very light gray #E0E0E0 (hairline, 1px)
+- **Primary accent: Action Blue #0066CC** — used for ALL interactive elements (buttons, links, active tabs, selected states)
 
 ### Dark Mode (for featured / hero sections within a screen)
-- Section background: near-black `#1D1D1F` or dark charcoal `#272729`
-- Card background: dark gray `#2A2A2C` with border `#3A3A3C`
-- Primary text: white `#FFFFFF`
-- Secondary text: muted white `#CCCCCC`
-- **Primary accent on dark: Sky Blue `#2997FF`** — Action Blue is invisible on dark backgrounds; always switch to Sky Blue on dark surfaces
+- Section background: near-black #1D1D1F or dark charcoal #272729
+- Card background: dark gray #2A2A2C with border #3A3A3C
+- Primary text: white #FFFFFF
+- Secondary text: muted white #CCCCCC
+- **Primary accent on dark: Sky Blue #2997FF** — Action Blue is invisible on dark backgrounds; always switch to Sky Blue on dark surfaces
 
 ### Accent Rules (non-negotiable)
-- Exactly ONE accent color per surface: `#0066CC` on light, `#2997FF` on dark
+- Exactly ONE accent color per surface: #0066CC on light, #2997FF on dark
 - No second accent color — no red, orange, green, or purple accents
 - No gradient fills anywhere in the UI
 - Brand color from GOATicket logo takes priority over Action Blue when provided
@@ -699,15 +708,15 @@ Always use these exact colors. Never deviate.
 
 | Role | Size | Weight | Color |
 |---|---|---|---|
-| Hero / page title | 34pt | Extra Bold | `#1D1D1F` or white on dark |
-| Navigation bar title | 17pt | Semibold | `#1D1D1F` or white on dark |
-| Section heading | 22pt | Bold | `#1D1D1F` |
-| Card title | 17pt | Semibold | `#1D1D1F` |
-| Body text | 17pt | Regular | `#1D1D1F` |
-| Secondary / caption | 15pt | Regular | `#6B6B6B` |
-| Label / tag | 13pt | Semibold | white on colored bg, or `#1D1D1F` |
-| Fine print | 12pt | Regular | `#7A7A7A` |
-| Tab bar label | 10pt | Medium | `#0066CC` active / `#7A7A7A` inactive |
+| Hero / page title | 34pt | Extra Bold | #1D1D1F or white on dark |
+| Navigation bar title | 17pt | Semibold | #1D1D1F or white on dark |
+| Section heading | 22pt | Bold | #1D1D1F |
+| Card title | 17pt | Semibold | #1D1D1F |
+| Body text | 17pt | Regular | #1D1D1F |
+| Secondary / caption | 15pt | Regular | #6B6B6B |
+| Label / tag | 13pt | Semibold | white on colored bg, or #1D1D1F |
+| Fine print | 12pt | Regular | #7A7A7A |
+| Tab bar label | 10pt | Medium | #0066CC active / #7A7A7A inactive |
 
 Typography rules:
 - Headlines at 22pt+ must have tight letter-spacing (slightly condensed)
@@ -755,32 +764,32 @@ Typography rules:
 - 49px tall, white background on light screens / dark on dark screens
 - Top border: 1px light gray
 - Contains 4 tabs with icon + Korean label below each
-- Active tab: icon and label in `#0066CC` (Action Blue)
-- Inactive tabs: icon and label in `#7A7A7A` gray
+- Active tab: icon and label in #0066CC (Action Blue)
+- Inactive tabs: icon and label in #7A7A7A gray
 - Tabs: 홈 / 경기일정 / 내 티켓 / 마이페이지
 
 ### Primary CTA Button
 - Full-width rounded pill shape (very round corners, capsule shape)
 - 32px margin on each side (so it spans from 32px to 358px)
 - Height: 50px
-- Light mode: filled `#0066CC`, white Korean text, 17pt semibold
-- Dark mode: filled `#2997FF`, white Korean text, 17pt semibold
+- Light mode: filled #0066CC, white Korean text, 17pt semibold
+- Dark mode: filled #2997FF, white Korean text, 17pt semibold
 - Example text: 예매하기 / 결제하기 / 좌석 선택 / 다음
 
 ### Secondary CTA Button
 - Same pill shape and size as primary
-- Transparent background, `#0066CC` border and text (ghost style)
+- Transparent background, #0066CC border and text (ghost style)
 
 ### Content Card
-- White background (`#FFFFFF`)
+- White background (#FFFFFF)
 - Corner radius: 16px (softly rounded)
-- Very thin gray border: 1px `#E0E0E0`
+- Very thin gray border: 1px #E0E0E0
 - NO drop shadow — the card sits flat
 - Internal padding: 16px
 - Contains: stadium or game thumbnail image on top + match info below
 
 ### Ticket Card (Featured)
-- Dark background: very dark navy `#1A1A2E` or team's representative color
+- Dark background: very dark navy #1A1A2E or team's representative color
 - Corner radius: 20px
 - Team logos / stadium image at top (16:9 ratio, fills card width, rounded top corners)
 - White text content below: home team vs away team, date, seat info
@@ -789,15 +798,15 @@ Typography rules:
 
 ### Search Input Field
 - Pill-shaped (capsule), 44px tall
-- Light gray fill `#F0F0F2` on light screens, dark gray `#2A2A2C` on dark screens
+- Light gray fill #F0F0F2 on light screens, dark gray #2A2A2C on dark screens
 - No border visible in rest state
 - Left: gray search icon (🔍) at 16px
-- Placeholder text: Korean, gray `#7A7A7A` (e.g., 팀명 또는 구장을 검색하세요)
+- Placeholder text: Korean, gray #7A7A7A (e.g., 팀명 또는 구장을 검색하세요)
 
 ### Category Filter — Team or Stadium Tabs
 - Horizontal scrolling row of pill-shaped chips
-- Rest state: light gray fill `#F0F0F2`, dark text `#1D1D1F`, 13pt semibold
-- Active/selected: `#0066CC` fill, white text
+- Rest state: light gray fill #F0F0F2, dark text #1D1D1F, 13pt semibold
+- Active/selected: #0066CC fill, white text
 - Height: 32px, padding: 12px horizontal
 - Categories are ONLY baseball team names or stadium names:
 
@@ -823,7 +832,7 @@ No other category types exist — no 콘서트, 뮤지컬, 전시, or any non-ba
 ### Section Header
 - Left-aligned, 22pt bold Korean heading text
 - 16px from left edge
-- Optional right-side "더보기" link in `#0066CC` accent color
+- Optional right-side "더보기" link in #0066CC accent color
 
 ### Notification Badge
 - Small red circle (예외적으로 빨간색 허용 — badges only) or accent blue
@@ -860,18 +869,18 @@ Use these as the basis for specific screen generation requests.
 
 | Screen | Korean Name | Key Elements |
 |---|---|---|
-| `splash` | 스플래시 | Dark bg, centered GOATicket logo, loading indicator |
-| `onboarding` | 온보딩 | Light bg, baseball illustration, large heading, body, primary CTA |
-| `home` | 홈 | Large title, search bar, team/stadium filter chips, today's games section, upcoming games list |
-| `schedule` | 경기일정 | Calendar or date strip, filter chips (팀별/구장별), game list rows |
-| `search` | 검색 | Search input focused, recent searches, team logo grid |
-| `game-detail` | 경기 상세 | Stadium hero image, home vs away team info, date/time, seat grade selector, CTA |
-| `seat-selection` | 좌석 선택 | Dark bg, stadium seat map (visual grid with zones), seat grade legend, selection summary, CTA |
-| `payment` | 결제 | Step indicator, order summary (game + seat), payment method, final pay button |
-| `ticket-wallet` | 내 티켓 | Featured ticket card (dark, shows teams + QR), upcoming game list below |
-| `ticket-detail` | 티켓 상세 | Ticket card with QR/barcode, game info rows (구장, 좌석, 날짜) |
-| `profile` | 마이페이지 | User info header, my team 즐겨찾기, settings list rows |
-| `login` | 로그인 | GOATicket logo, input fields, primary/secondary CTAs, social login options |
+| splash | 스플래시 | Dark bg, centered GOATicket logo, loading indicator |
+| onboarding | 온보딩 | Light bg, baseball illustration, large heading, body, primary CTA |
+| home | 홈 | Large title, search bar, team/stadium filter chips, today's games section, upcoming games list |
+| schedule | 경기일정 | Calendar or date strip, filter chips (팀별/구장별), game list rows |
+| search | 검색 | Search input focused, recent searches, team logo grid |
+| game-detail | 경기 상세 | Stadium hero image, home vs away team info, date/time, seat grade selector, CTA |
+| seat-selection | 좌석 선택 | Dark bg, stadium seat map (visual grid with zones), seat grade legend, selection summary, CTA |
+| payment | 결제 | Step indicator, order summary (game + seat), payment method, final pay button |
+| ticket-wallet | 내 티켓 | Featured ticket card (dark, shows teams + QR), upcoming game list below |
+| ticket-detail | 티켓 상세 | Ticket card with QR/barcode, game info rows (구장, 좌석, 날짜) |
+| profile | 마이페이지 | User info header, my team 즐겨찾기, settings list rows |
+| login | 로그인 | GOATicket logo, input fields, primary/secondary CTAs, social login options |
 
 ---
 
@@ -879,10 +888,10 @@ Use these as the basis for specific screen generation requests.
 
 1. **Color**: Always use the exact hex values defined above. No approximations.
 2. **Navigation**: Every screen shows the same status bar style (time + icons) at top and the same bottom tab bar (unless it's a modal or full-screen overlay).
-3. **Active tab**: The tab bar must always highlight the correct active screen tab in `#0066CC`.
+3. **Active tab**: The tab bar must always highlight the correct active screen tab in #0066CC.
 4. **Margins**: 16pt left/right edge margin on all content — no exceptions except full-bleed images.
 5. **CTA position**: The primary action button is always near the bottom of the screen, above the tab bar. Never floating randomly in the middle.
-6. **Surface alternation**: If a screen has multiple distinct sections, alternate between white `#FFFFFF` / off-white `#F5F5F7` and dark `#1D1D1F` / `#272729` sections to create visual rhythm.
+6. **Surface alternation**: If a screen has multiple distinct sections, alternate between white #FFFFFF / off-white #F5F5F7 and dark #1D1D1F / #272729 sections to create visual rhythm.
 7. **No phone frame**: The output must be the screen only — no device shell, no outer glow, no background.
 8. **No decorative gradients**: Background fills are solid colors only.
 9. **No UI shadows**: Only the featured Ticket Card may have a very subtle shadow. All other cards and elements are flat.
@@ -915,14 +924,19 @@ To generate a specific screen, append after this system prompt:
 > a "오늘의 경기" section showing 2 game cards
 > (e.g., LG 트윈스 vs 두산 베어스 · 잠실야구장 · 오후 6:30),
 > and a bottom tab bar with 홈/경기일정/내 티켓/마이페이지 tabs
-> with 홈 active. |
+> with 홈 active.
+```
 
 본 과정에서는 좌측 상단의 로고의 일관성을 높이고 원래 의도했던 GOATicket의 GOAT부분이 하나로 묶여 출력되도록 수정하였다.
 
 | 수정2 | 수정 전 | 수정 후  |
 | --- | --- | --- |
 | 출력 이미지 |  |  |
-| 프롬프트 | (전 프롬프트의 결과물을 첨부하여 실행) | — Gpt Image
+| 프롬프트 | (전 프롬프트의 결과물을 첨부하여 실행) | 아래 수정 후 참고 |
+
+```markdown
+[수정 후]
+— Gpt Image
 
 # GOATicket UI Design 후가공Prompt_1
 
@@ -965,7 +979,8 @@ To generate a specific screen, append after this system prompt:
 이름: [김고아] ▶ [김고트], ID: [goa_fan23] ▶ [goat_fan23] 으로 변경
 
 2. **메인페이지** 상단 배너의 문구 변경
-[KBO를 넘어 GOA의 열기를 경험하세요!] ▶ [KBO의 열기는 GOAT에서 경험하세요!]  |
+[KBO를 넘어 GOA의 열기를 경험하세요!] ▶ [KBO의 열기는 GOAT에서 경험하세요!] 
+```
 
 ### 4. 최종 화면 구성
 
@@ -979,4 +994,3 @@ To generate a specific screen, append after this system prompt:
 | 6 | 마이 페이지 | 어플 로고, 예매 내역, 쿠폰, 설정 |
 
 [https://www.figma.com/design/kNkG4y62RRB2yjigiQwKBV/GOATicket?timeline=keyframe&node-id=0-1&p=f&t=yzDhJd24k7uGcVfu-0](https://www.figma.com/design/kNkG4y62RRB2yjigiQwKBV/GOATicket?timeline=keyframe&node-id=0-1&p=f&t=yzDhJd24k7uGcVfu-0)
-
