@@ -348,7 +348,7 @@ AI모델이 이미지를 생성할때 같은 디자인과 형식을 유지하기
 
 | 수정1 | 수정 전 | 수정 후  |
 | --- | --- | --- |
-| 출력 이미지 | <img src="./source/수정전_메인페이지.png" width="200" alt="before"> | <img src="./source/메인페이지.png" width="200" alt="after"> |
+| 출력 이미지 | <img src="./source/수정전_메인페이지.png" width="300" alt="before"> | <img src="./source/메인페이지.png" width="300" alt="after"> |
 | 프롬프트 | [아래 수정 전 참고] | [아래 수정 후 참고] |
 
 ```markdown
@@ -927,7 +927,7 @@ To generate a specific screen, append after this system prompt:
 
 | 수정2 | 수정 전 | 수정 후  |
 | --- | --- | --- |
-| 출력 이미지 |  |  |
+| 출력 이미지 | <img src="./source/메인페이지.png" width="300" alt="before"> | <img src="./result/메인페이지(수정완).png" width="300" alt="before"> |
 | 프롬프트 | (전 프롬프트의 결과물을 첨부하여 실행) | 아래 수정 후 참고 |
 
 ```markdown
